@@ -1,0 +1,144 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$primary-color: #fff;
+$secondary-color: #2091EB;
+$border-color: #e5e5e5;
+$bg-color: #69BE28;
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: darken( $primary-color, .6% );
+}
+
+.header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  color: #c0d80b;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: darken( $primary-color, 50% );
+  border-top: 1px solid $border-color;
+}
+
+
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+
+a {
+  color: darken($bg-color, 10);
+}
+
+/* Align the price into the center vertically and horizontally */
+.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  color: darken($primary-color, 90%);
+  background: darken($primary-color, 20%); 
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.dollars:before { 
+  content:'$'; 
+}
+
+/* Custom button with content Back */
+.btn-back {
+  margin-top: 2rem;
+}
+
+/* Make details-wrapper to be more spacefull from other component */
+.details-wrapper {
+  margin: 5rem 0 8rem 0;
+}
+
+/* Custom background color in the panel header */ 
+.panel {
+  .title {
+    background: $bg-color;
+    color: $primary-color;
+  }
+  .panel-heading {
+    background: $bg-color;
+    color: $primary-color;
+  }
+  span.title {
+    font-weight: 600;
+    color: darken($primary-color, 80);
+    background: $primary-color;
+    font-size: 1.4rem;
+  }
+}
+
+h5.label-title {
+  color: darken($primary-color, 35);
+}
+
+/* Custom color in button secondary */
+.btn-secondary {
+  background: $bg-color;
+  color: $primary-color;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .price-box {
+    width: 30%;
+    color: $primary-color;
+    background: $secondary-color;
+    border-radius: 0;
+  }
+}

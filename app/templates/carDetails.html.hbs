@@ -1,0 +1,28 @@
+
+<a href="/" class="btn btn-default btn-back">< Back</a>
+
+<div class="details-wrapper">
+  <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">     
+          <div class="col-xs-4">
+            <h5>Car of <strong>{{ vehicle.vendorName }}</strong></h5>
+            <img src="{{ vehicle.pictureUrl }}"/>
+          </div>
+          <div class="col-xs-5 col-sm-5 col-xs-12">
+            <h6>Model Name: <span class="title">{{ vehicle.vehMakeModelName }}</span></h6>
+            <h6>Fuel Type: <strong>{{ vehicle.fuelType }}</strong></h6>
+            <h6>Transmission Type: <strong>{{ vehicle.transmissionType }}</strong></h6>
+            <h6>Passengers: <strong>{{ vehicle.passengerQuantity }}</strong></h6>
+            <h6>Doors: <strong>{{ vehicle.doorCount }}</strong></h6>
+            <h6>Air Condition: <strong>{{ vehicle.airConditionInd }}</strong></h6>
+            <h6>Baggages: <strong>{{ vehicle.baggageQuantity }}</strong></h6>
+            <h6>Drive Type: <strong>{{ vehicle.driveType }}</strong></h6>
+          </div>
+          <div class="col-xs-3 price-box">
+            <div> <span class="dollars"> {{ totalCharge.rateTotalAmount }} </span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
